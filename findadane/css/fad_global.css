@@ -1,0 +1,80 @@
+textarea,
+input[type='text'],
+input[type='password'],
+input[type='number'] {
+    border: 1px solid #ccc;
+    padding: 6.5px 8.5px 6.5px 8.5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #030303;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.g_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: url("https://dane-imran.appspot.com/imgs/background.png");
+    background-repeat: repeat;
+}
+
+::-webkit-input-placeholder {
+    color: #a6a8ab;
+}
+
+:-ms-input-placeholder {
+    color: #a6a8ab;
+}
+
+::-moz-placeholder {
+    color: #a6a8ab;
+}
+
+.g_input_container {
+    position: relative;
+}
+
+.input_label {
+    position: absolute;
+}
+
+.span_elem_class {
+    position: absolute;
+    top: -7.5px !important;
+    left: 5px !important;
+    padding: 0px 4px !important;
+    font-size: 11px !important;
+    color: #999999;
+    background-color: #FFFFFF;
+    opacity: 1 !important;
+}
+
+.g_input_container input {
+    width: 100%;
+}
+
+.g_input_container span {
+    position: absolute;
+    top: 6.5px;
+    left: 6.5px;
+    padding: 0px 0px;
+    font-size: 14px;
+    color: #999999;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: top 0.3s, left 0.3s, font-size 0.3s, opacity 0s;
+}
+
+.g_show_password {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    opacity: 0.6;
+    cursor: pointer;
+}

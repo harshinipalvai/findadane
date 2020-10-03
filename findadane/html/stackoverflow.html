@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <style type="text/css">
+        .images {
+            position: absolute;
+            height: 77%;
+            width: 39%;
+            right: 2.5%;
+            bottom: 6.8%;
+            top: 16%;
+            background-color: #98FF98;
+        }
+    </style>
+    <div class="images"></div>
+    <!--If this line is deleted the background does not appear-->
+    <style>
+        @media screen and (max-width:800px) {
+            .images {
+                position: absolute;
+                height: 47%;
+                width: 96%;
+                left: 2%;
+                top: 16%;
+                background-color: #98FF98;
+            }
+        }
+    </style>
+    <!--This line works good when screen is narrowed-->
+    <div class="images"></div>
+    <!--This line does nothing and doesnt need to be there-->
+
+    <style type="text/css">
+        .pha {
+            position: absolute;
+            width: 6%;
+            right: 8.2%;
+            top: 18.5%;
+        }
+    </style>
+    <div class="pha"><img alt="Photo" src="/img/soda.jpg" style="width:160%;"></div>
+    <style>
+        @media screen and (max-width:800px) {
+            .pha {
+                position: absolute;
+                width: 6%;
+                left: 7.2%;
+                top: 17%;
+            }
+        }
+    </style>
+    <!--All this line does is deletes the photo when the screen is narrowed-->
+    <div class="pha"><img alt="Photo" src="/img/soda.jpg" style="width:285%;"></div>
+    <!--This line does not reposition the photo when the screen is narrowed-->
+
+</body>
+
+</html>
